@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class ClockAnimator : MonoBehaviour
+public class ClockAnalog : MonoBehaviour
 {
     private const float
     hoursToDegrees = 360f / 12f,

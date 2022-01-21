@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class ClockReality : MonoBehaviour
+public class ClockDigital : MonoBehaviour
 {
     float secondsTextNew = 60f, minutesTextNew = 60f, hoursTextNew = 12f;
 
@@ -15,8 +15,8 @@ public class ClockReality : MonoBehaviour
     {
         DateTime time = DateTime.Now;
                 
-        hoursText.text = "" + (time.Hour * (12f / hoursTextNew)) + "  :";
-        minutesText.text = "" + (time.Minute * (60f / minutesTextNew)) + "  :";
+        hoursText.text = "" + (time.Hour * (12f / hoursTextNew)) + " :";
+        minutesText.text = "" + (time.Minute * (60f / minutesTextNew)) + " :";
         secondText.text = "" + (time.Second * (60f / secondsTextNew));
     }
 }
